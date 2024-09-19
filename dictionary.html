@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dictionary</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+      }
+      h3 {
+        text-align: center;
+      }
+      td {
+        height: 25px;
+      }
+      button {
+        width: 70px;
+        height: 25px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h3>Từ điển Anh - Việt</h3>
+      <table>
+        <tr>
+          <td>Nhập từ tiếng Anh:</td>
+          <td>
+            <input
+              type="text"
+              id="eng_word"
+              style="font-family: 'Times New Roman'; font-size: 1em"
+            />
+          </td>
+          <td><button type="button" onclick="trans()">Dịch</button></td>
+        </tr>
+        <tr>
+          <td>Nghĩa tiếng Việt:</td>
+          <td id="viet_word"></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="dictionary.js"></script>
+  </body>
+</html>
